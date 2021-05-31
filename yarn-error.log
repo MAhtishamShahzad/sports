@@ -1,0 +1,82 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/opt/tcl-tk/bin:/usr/local/opt/ncurses/bin:/Users/apple/.amplify/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/lib/node_modules/node/bin/lb:/Library/Apple/usr/bin:/Users/apple/Library/Android/sdk/emulator:/Users/apple/Library/Android/sdk/tools:/Users/apple/Library/Android/sdk/tools/bin:/Users/apple/Library/Android/sdk/platform-tools:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/mongodb/bin:/Users/apple/Downloads/flutter/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/apple/Desktop/projects/Newsbuzz_app/package.json: Unexpected token } in JSON at position 1659
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "@expo/vector-icons": "^10.2.0",
+      "axios": "^0.19.2",
+      "expo": "^36.0.0",
+      "firebase": "^7.17.1",
+      "native-base": "^2.13.8",
+      "react": "16.9.0",
+      "react-dom": "16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz",
+      "react-native-24h-timepicker": "^1.1.0",
+      "react-native-alert-pro": "^1.1.2",
+      "react-native-appearance": "^0.3.2",
+      "react-native-datepicker": "^1.7.2",
+      "react-native-elements": "^2.0.4",
+      "react-native-firebase": "^5.6.0",
+      "react-native-gesture-handler": "~1.5.0",
+      "react-native-maps": "0.26.1",
+      "react-native-option-select": "^1.0.4",
+      "react-native-paper": "^3.2.1",
+      "react-native-reanimated": "~1.4.0",
+      "react-native-safe-area-context": "0.6.0",
+      "react-native-screens": "^2.0.0-beta.10",
+      "react-native-simple-date-picker": "0.0.1",
+      "react-native-simple-time-picker": "^0.2.0",
+      "react-native-star-rating": "^1.1.0",
+      "react-native-swiper": "^1.6.0-nightly.5",
+      "react-native-view-more-text": "^2.1.0",
+      "react-native-web": "^0.11.7",
+      "react-navigation": "^4.0.10",
+      "react-navigation-drawer": "^2.3.3",
+      "react-navigation-material-bottom-tabs": "^2.1.5",
+      "react-navigation-stack": "^1.10.3",
+      "react-navigation-tabs": "^2.6.0",
+      "react-redux": "^7.2.0",
+      "redux": "^4.0.5",
+      "redux-devtools-extension": "^2.13.8",
+      "redux-thunk": "^2.3.0",
+    },
+    "devDependencies": {
+      "babel-preset-expo": "^8.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

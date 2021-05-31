@@ -1,9 +1,8 @@
 {
   "expo": {
-    "name": "News Buzz",
+    "name": "Sports News",
     "slug": "newsbuzz_clone",
     "privacy": "public",
-    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
       "android",
