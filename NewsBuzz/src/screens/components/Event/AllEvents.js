@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import { View, Text, StatusBar, Alert, RefreshControl } from "react-native";
-import TravelGuide from "../Guide/TravelGuide";
-import { ScrollView } from "react-native-gesture-handler";
-import ViewMoreText from "react-native-view-more-text";
-import { AppRegistry, FlatList, StyleSheet } from "react-native";
-import Constants from "expo-constants";
-import * as Location from "expo-location";
-import * as Permissions from "expo-permissions";
+import Constants from 'expo-constants';
+import * as Location from 'expo-location';
+import * as Permissions from 'expo-permissions';
+import React, { Component } from 'react';
+import { FlatList, Platform, RefreshControl, StyleSheet } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
+
+import TravelGuide from '../Guide/TravelGuide';
 
 export default class Latest extends React.Component {
   constructor() {

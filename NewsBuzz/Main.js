@@ -1,32 +1,26 @@
-import React from "react";
-import { StyleSheet, Image } from "react-native";
-import { createAppContainer } from "react-navigation";
-import { createBottomTabNavigator } from "react-navigation-tabs";
-import {
-  Ionicons as Icons,
-  FontAwesome as FIcons,
-  AntDesign as AD,
-  Feather as FeatherIcon,
-  Entypo,
-} from "@expo/vector-icons";
+import { AntDesign as AD, FontAwesome as FIcons } from '@expo/vector-icons';
+import React from 'react';
+import { Image } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
-import HomePage from "./src/screens/HomePage";
+import Admission from './src/screens/Admission';
+import Graduate from './src/screens/components/Admission/Graduate';
+import Undergraduate from './src/screens/components/Admission/Undergraduate';
+import News from './src/screens/components/News/NewsPage';
+import MainPage from './src/screens/components/NewsCategory/MainPage';
+import International from './src/screens/components/Scholarship/International';
+import Local from './src/screens/components/Scholarship/Local';
+import Event from './src/screens/Event';
+import HomePage from './src/screens/HomePage';
+import Jobs from './src/screens/Jobs';
+import Scholarship from './src/screens/Scholarship';
+import Search from './src/screens/Search';
+import SettingScreen from './src/screens/settings';
+
 // import News from "./src/screens/News";
-import News from "./src/screens/components/News/NewsPage";
-import Admission from "./src/screens/Admission";
-import Jobs from "./src/screens/Jobs";
-import Scholarship from "./src/screens/Scholarship";
-import Event from "./src/screens/Event";
-
-import MainPage from "./src/screens/components/NewsCategory/MainPage";
-import { createStackNavigator } from "react-navigation-stack";
 // import { TransitionPresets } from "@react-navigation/stack";
-import Graduate from "./src/screens/components/Admission/Graduate";
-import Undergraduate from "./src/screens/components/Admission/Undergraduate";
-import Local from "./src/screens/components/Scholarship/Local";
-import International from "./src/screens/components/Scholarship/International";
-import Search from "./src/screens/Search";
-import SettingScreen from './src/screens/settings'
 console.disableYellowBox = true;
 
 const Tabs = createBottomTabNavigator(

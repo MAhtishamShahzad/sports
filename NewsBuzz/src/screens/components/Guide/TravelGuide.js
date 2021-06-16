@@ -1,15 +1,8 @@
-import React from "react";
-import { View, Text, Image } from "react-native";
-import ViewMoreText from "react-native-view-more-text";
-import {
-  Ionicons as Icons,
-  FontAwesome5 as FIcons,
-  Feather as FeatherIcon,
-  MaterialIcons as Mat,
-  EvilIcons,
-  Entypo,
-} from "@expo/vector-icons";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { Entypo, FontAwesome5 as FIcons } from '@expo/vector-icons';
+import React from 'react';
+import { Image, Text, View } from 'react-native';
+import ViewMoreText from 'react-native-view-more-text';
+
 const TravelGuide = ({
   placeUri,
   placeName,
@@ -66,9 +59,9 @@ const TravelGuide = ({
           //   justifyContent: "space-between"
         }}
       >
-        {placeName ? (
+        {typeof placeName == "string" ? (
           <Text style={{ fontSize: 18, marginBottom: 10, fontWeight: "600" }}>
-            {placeName.trim()}{" "}
+            {placeName.trim()}
           </Text>
         ) : null}
 
@@ -103,7 +96,7 @@ const TravelGuide = ({
               {"\n"}
               <Entypo name="globe" size={19} color="black" />
               &nbsp;
-              {location.trim()}
+              {location?.trim()}
               {"\n"}
             </Text>
           ) : null}
@@ -114,7 +107,7 @@ const TravelGuide = ({
               textAlign: "left",
             }}
           >
-            {placeDes.trim()}
+            {placeDes?.trim()}
           </Text>
         </ViewMoreText>
       </View>
